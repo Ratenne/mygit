@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../css/common.css" rel="stylesheet" />
+<style>
+h2{text-align: left;
+}
+table{width:50%;}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+}
+</style>
+</head>
+<body>
+	<h2>로그인</h2>
+	<form action="login.jsp" method="POST">
+		<table>
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" name="userid" /> </td>
+			</tr>
+			<tr>
+				<td>암호</td>
+				<td><input type="password" name="passwd" /> </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<input type="submit" value="로그인" />
+				<button type="button" id="reg" onclick="location.href='memregform.html' ">회원가입</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<hr>
+	<a href="list.jsp">회원목록</a>
+</body>
+</html>
